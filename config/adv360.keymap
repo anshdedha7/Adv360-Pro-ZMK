@@ -26,6 +26,13 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+
+      ctrl_p: ctrl_p {
+          compatible = "zmk,behavior-mod-morph";
+          #binding-cells = <0>;
+          bindings = <&kp P>, <&macro_pass>;
+          mods = <(MOD_LCTL|MOD_RCTL)>;
+      };
     };
 
   keymap {
