@@ -32,22 +32,11 @@
     compatible = "zmk,behavior-macro";
     label = "macro_kinesis";
     #binding-cells = <0>;
-    wait-ms = <10>;
-    bindings
-        = <&kp F &kp A &kp S &kp T>
-        , <&macro_wait_time 500>
-        , <&kp S &kp L &kp O &kp W>
-        ;
+    bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
   };
   macro_ctrl_alt_del: macro_ctrl_alt_del {
     compatible = "zmk,behavior-macro";
     label = "macro_ctrl_alt_del";
     #binding-cells = <0>;
-    bindings 
-        = <&macro_press &LCTRL>
-        , <&macro_press &LALT>
-        , <&macro_tap &kp DEL>
-        , <&macro_release &LALT>
-        , <&macro_release &LCTRL>
-        ;
+    bindings = bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;;
   };
