@@ -40,6 +40,12 @@
     #binding-cells = <0>;
     bindings = <&kp LS(I)>, <&kp W>, <&kp I>, <&kp L>, <&kp L>, <&kp W>, <&kp I>, <&kp N>, <&kp AT_SIGN>, <&kp P>, <&kp C>, <&kp N0>, <&kp ENTER>;
   };
+  macro_spec: macro_spec {
+    compatible = "zmk,behavior-macro";
+    label = "macro_spec";
+    #binding-cells = <0>;
+    bindings = <&kp LC(B)>, <&kp LC(U)>, <&kp LS(S)>, <&kp C>, <&kp O>, <&kp P>, <&kp E>, <&kp COLON>, <&kp ENTER>, <&kp LC(B)>, <&kp LC(U)>, <&kp LS(LC(B))>, <&kp ENTER>, <&kp ENTER>, <&kp LC(B)>, <&kp LC(U)>, <&kp LS(D)>, <&kp E>, <&kp V>, <&kp SPACE>, <&kp LS(N)>, <&kp O>, <&kp T>, <&kp E>, <&kp S>, <&kp COLON>, <&kp ENTER>, <&kp LC(B)>, <&kp LC(U)>, <&kp LS(LC(B))>, <&kp UP>, <&kp UP>;
+  };
   macro_python_comment: macro_python_comment {
     compatible = "zmk,behavior-macro";
     label = "macro_python_comment";
@@ -71,23 +77,31 @@
     #binding-cells = <0>;
     bindings = <&kp TAB>, <&kp TAB>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp ENTER>, <&kp TAB>, <&kp TAB>, <&kp ENTER>;
   };
+  macro_log_time_meeting: macro_log_time_meeting {
+    compatible = "zmk,behavior-macro";
+    label = "macro_log_time_meeting";
+    #binding-cells = <0>;
+    bindings = <&kp TAB>, <&kp TAB>, <&kp DOWN>, <&kp ENTER>, <&kp TAB>, <&kp TAB>, <&kp ENTER>;
+  };
   macro_log_time_research: macro_log_time_research {
     compatible = "zmk,behavior-macro";
     label = "macro_log_time_research";
     #binding-cells = <0>;
     bindings = <&kp TAB>, <&kp TAB>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp ENTER>, <&kp TAB>, <&kp TAB>, <&kp ENTER>;
   };
-  macro_log_time_dev: macro_log_time_dev {
+  macro_lead_acceptance: macro_lead_acceptance {
     compatible = "zmk,behavior-macro";
-    label = "macro_log_time_dev";
+    label = "macro_lead_acceptance";
+    wait-ms = <50>;
     #binding-cells = <0>;
-    bindings = <&kp TAB>, <&kp TAB>, <&kp D>, <&kp E>, <&kp V>, <&kp ENTER>, <&kp TAB>, <&kp TAB>, <&kp ENTER>;
+    bindings = <&kp PERIOD>, <&kp L>, <&kp E>, <&kp A>, <&kp D>, <&kp SPACE>, <&kp A>, <&kp C>, <&kp ENTER>, <&kp A>, <&kp N>, <&kp S>, <&kp H>, <&kp SPACE>, <&kp D>, <&kp DOWN>, <&kp ENTER>, <&kp ENTER>;
   };
-  macro_log_time_test: macro_log_time_test {
+  macro_next_line: macro_next_line {
     compatible = "zmk,behavior-macro";
-    label = "macro_log_time_test";
+    label = "macro_next_line";
+    wait-ms = <20>;
     #binding-cells = <0>;
-    bindings = <&kp TAB>, <&kp TAB>, <&kp T>, <&kp E>, <&kp S>, <&kp ENTER>, <&kp TAB>, <&kp TAB>, <&kp ENTER>;
+    bindings = <&kp END>, <&kp ENTER>;
   };
   macro_up: macro_up {
     compatible = "zmk,behavior-macro";
@@ -102,6 +116,27 @@
     wait-ms = <20>;
     #binding-cells = <0>;
     bindings = <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>;
+  };
+  macro_python_class: macro_python_class {
+    compatible = "zmk,behavior-macro";
+    label = "macro_python_class";
+    wait-ms = <50>;
+    #binding-cells = <0>;
+    bindings = <&kp D>, <&kp E>, <&kp F>, <&kp SPACE>, <&kp UNDER>, <&kp UNDER>, <&kp I>, <&kp N>, <&kp I>, <&kp T>, <&kp UNDER>, <&kp UNDER>, <&kp LPAR>, <&kp RPAR>, <&kp LEFT>, <&kp S>, <&kp E>, <&kp L>, <&kp F>, <&kp RIGHT>, <&kp COLON>, <&kp ENTER>, <&kp S>, <&kp E>, <&kp L>, <&kp F>;
+  };
+  macro_return: macro_return {
+    compatible = "zmk,behavior-macro";
+    label = "macro_return";
+    wait-ms = <20>;
+    #binding-cells = <0>;
+    bindings = <&kp R>, <&kp E>, <&kp T>, <&kp U>, <&kp R>, <&kp N>, <&kp SPACE>;
+  };
+  macro_debug: macro_debug {
+    compatible = "zmk,behavior-macro";
+    label = "macro_debug";
+    wait-ms = <20>;
+    #binding-cells = <0>;
+    bindings = <&kp P>, <&kp R>, <&kp I>, <&kp N>, <&kp T>, <&kp LPAR>, <&kp DQT>, <&kp H>, <&kp E>, <&kp L>, <&kp L>, <&kp O>, <&kp DQT>, <&kp COMMA>, <&kp SPACE>, <&kp LBRC>, <&kp K>, <&kp COLON>, <&kp SPACE>, <&kp V>, <&kp SPACE>, <&kp F>, <&kp O>, <&kp R>, <&kp SPACE>, <&kp K>, <&kp COMMA>, <&kp V>, <&kp SPACE>, <&kp I>, <&kp N>, <&kp SPACE>, <&kp L>, <&kp O>, <&kp C>, <&kp A>, <&kp L>, <&kp S>, <&kp LPAR>, <&kp RPAR>, <&kp PERIOD>, <&kp I>, <&kp T>, <&kp E>, <&kp M>, <&kp S>, <&kp LPAR>, <&kp RPAR>, <&kp SPACE>, <&kp I>, <&kp F>, <&kp SPACE>, <&kp K>, <&kp SPACE>, <&kp EXCL>, <&kp EQUAL>, <&kp SPACE>, <&kp DQT>, <&kp S>, <&kp E>, <&kp L>, <&kp F>, <&kp DQT>, <&kp RBRC>, <&kp RPAR>;
   };
   win_double_tap: win_double_tap {
     compatible = "zmk,behavior-macro-one-param";
