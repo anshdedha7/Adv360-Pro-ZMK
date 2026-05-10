@@ -46,14 +46,14 @@
       bindings = <
         &kp ESC   &kp N1         &kp N2   &kp N3          &kp N4     &kp N5 &mo 3                                                                  &mo 3           &kp N6 &kp N7 &kp N8           &kp N9   &kp N0           &kp MINUS
         &kp TAB   &kp Q          &kp W    &kp E           &kp R      &kp T  &kp F9                                                                 &kp C_VOL_UP    &kp Y  &kp U  &kp I            &kp O    &kp P            &kp BSLH
-        &mo 1     &kp A          &kp S    &hm LSHIFT D    &kp F      &kp G  &kp F8              &kp LGUI  &kp LALT &kp DEL     &mo 2               &kp C_VOL_DN    &kp H  &kp J  &hm LSHIFT K     &kp L    &kp SEMI         &kp SQT
+        &mo 1     &kp A          &kp S    &kp D           &kp F      &kp G  &kp F8              &kp LGUI  &kp LALT &kp DEL     &mo 2               &kp C_VOL_DN    &kp H  &kp J  &kp K            &kp L    &kp SEMI         &kp SQT
         &kp LSHFT &kp Z          &kp X    &kp C           &kp V      &kp B                                &kp HOME &kp PG_UP                                       &kp N  &kp M  &kp COMMA        &kp DOT  &kp FSLH         &kp RSHFT
         &kp LSHFT &kp GRAVE      &kp CAPS &kp LEFT        &kp RIGHT                    &kp BSPC &kp LCTRL &kp END  &kp PG_DN   &kp ENTER &kp SPACE                        &kp UP &kp DOWN         &kp LBKT &kp RBKT         &kp PRINTSCREEN
       >;
     };
     keypad {
       bindings = <
-        &kp EQUAL       &kp N1    &kp N2            &kp N3             &kp N4              &kp N5           &trans                                                                                   &mo 3 &kp N6           &kp KP_NUM &macro_select_star &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
+        &kp EQUAL       &kp N1    &kp N2            &kp N3             &kp N4              &kp N5           &trans                                                                                   &mo 3 &kp N6           &kp KP_NUM &kp KP_ASTERISK    &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
         &kp TAB         &kp Q     &kp W             &kp E              &kp R               &kp T            &trans                                                                                   &none &macro_braces    &kp KP_N7  &kp KP_N8          &kp KP_N9     &kp AT          &kp BSLH
         &kp ESC         &kp A     &hm_win N1 N1     &hm_win N2 N2      &hm_win N3 N3       &kp LG(N4)       &kp LG(N5)           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                              &none &macro_parens    &kp KP_N4  &kp KP_N5          &kp KP_N6     &kp EQUAL       &macro_python_comment
         &kp CAPS        &kp Z     &kp LG(N6)        &hm_win N7 N7      &kp LG(N8)          &kp B                                                 &kp HOME &kp PG_UP                                        &macro_brackets  &kp KP_N1  &kp KP_N2          &kp KP_N3     &kp KP_PLUS     &kp RSHFT
@@ -63,9 +63,9 @@
     fn {
       bindings = <
         &trans &kp F1                 &kp F2      &kp F3              &kp F4                   &kp F5                   &tog 1                                          &mo 3                &kp F6          &kp F7              &kp F8                &kp F9           &kp F10      &kp F11
-        &trans &trans                 &trans      &trans              &macro_log_time_research &macro_log_time_test     &none                                           &kp C_BRIGHTNESS_INC &trans          &trans              &trans                &kp LC(LA(DEL))  &macro_pass  &kp F12
-        &trans &trans                 &trans      &macro_log_time_dev &trans                   &trans                   &none        &trans &trans &trans &trans        &kp C_BRIGHTNESS_DEC &trans          &trans              &trans                &trans           &trans       &kp F13
-        &trans &trans                 &trans      &macro_log_time_cr  &trans                   &trans                                       &trans &trans                                    &macro_log_time &macro_log_time_mgt &trans                &trans           &trans       &trans
+        &trans &trans                 &trans      &trans              &trans                   &trans                   &none                                           &kp C_BRIGHTNESS_INC &trans          &trans              &trans                &kp LC(LA(DEL))  &trans       &kp F12
+        &trans &trans                 &trans      &trans              &trans                   &trans                   &none        &trans &trans &trans &trans        &kp C_BRIGHTNESS_DEC &trans          &trans              &trans                &trans           &trans       &kp F13
+        &trans &trans                 &trans      &trans              &trans                   &trans                                       &trans &trans                                    &trans          &trans              &trans                &trans           &trans       &trans
         &trans &trans                 &trans      &trans              &trans                                                  &trans &trans &trans &trans &trans &trans                                      &trans              &trans                &trans           &trans       &trans
       >;
     };
