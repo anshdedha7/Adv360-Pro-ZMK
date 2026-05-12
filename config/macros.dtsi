@@ -54,9 +54,9 @@
     #binding-cells = <0>;
     bindings = <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>, <&kp DOWN>;
   };
-  macro_new_line: macro_down {
+  macro_new_line: macro_new_line {
     compatible = "zmk,behavior-macro";
-    label = "macro_down";
+    label = "macro_new_line";
     wait-ms = <20>;
     #binding-cells = <0>;
     bindings = <&kp END>, <&kp ENTER>;
